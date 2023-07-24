@@ -1,7 +1,6 @@
 import { Universe } from "wasm-game-of-life";
 
 const pre = document.getElementById("game-of-life-canvas");
-console.log(Universe);
 const universe = Universe.new();
 const renderLoop = () => {
   pre.textContent = universe.render();
